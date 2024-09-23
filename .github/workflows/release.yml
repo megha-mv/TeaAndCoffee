@@ -34,11 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          - name: Run semantic-release
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          run: npx semantic-release
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
 
       - name: Display the new version
         run: echo "The new release version is $(npx semantic-release | grep 'Release version' | sed -n 's/.*version \([0-9.]*\).*/\1/p')"

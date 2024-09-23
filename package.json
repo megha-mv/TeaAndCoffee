@@ -1,10 +1,17 @@
 {
-  "name": "teaandcoffee",
+  "name": "@megha-mv/teaandcoffee",
   "version": "1.0.0",
   "description": "This is simple nextjs ecommerce application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "type": "module",
+  "repository": {
+    "url": "https://github.com/megha-mv/ricoh-react-web-framework.git"
   },
   "author": "",
   "license": "ISC",

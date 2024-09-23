@@ -1,10 +1,5 @@
 {
-  "branches": [
-    {
-      "name": "main",
-      "prerelease": "${name.replace(///, \"-\")}"
-    }
-  ],
+  "branches": ["main"],
   "plugins": [
     [
       "@semantic-release/commit-analyzer",

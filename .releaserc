@@ -1,7 +1,7 @@
 {
   "branches": [
     {
-      "name": "feature/IDC-48",
+      "name": "main",
       "prerelease": "${name.replace(///, \"-\")}"
     }
   ],
